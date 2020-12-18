@@ -8,7 +8,7 @@ export default function Main(){
     return(
         <Container>
             <Title>
-                <img src="./images/logo.png" />
+                <img src="/images/logo.png" />
                 <h1>RepoProvas</h1>
             </Title> 
             <button onClick={() => history.push('/visualizar')}>
