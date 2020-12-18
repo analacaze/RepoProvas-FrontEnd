@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import {FaArrowCircleLeft} from 'react-icons/fa';
 import axios from 'axios';
@@ -37,7 +37,7 @@ export default function View(){
                 <List>
                     {teachers.map(teacher => {
                         return(
-                            <li key={teacher.id}>
+                            <li key={teacher.id} onClick={() => history.push(`/visualizar/por-professor/${teacher.id}`)}>
                                 <h2>{teacher.name}</h2>
                                 <h2>{teacher.number}</h2> 
                             </li>
@@ -48,7 +48,7 @@ export default function View(){
                 <List>
                     {subjects.map(subject => {
                         return(
-                            <li key={subject.id}>
+                            <li key={subject.id} onClick={() => history.push(`/visualizar/por-disciplina/${subject.id}`)}>
                                 <h2>{subject.name}</h2>
                                 <h2>{subject.number}</h2> 
                             </li>
