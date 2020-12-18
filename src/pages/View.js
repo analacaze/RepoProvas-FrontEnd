@@ -91,6 +91,16 @@ const Container = styled.div`
         align-items: center;
         border-radius: 5px;
     }
+    @media (max-width: 900px){
+        .icon{
+            top: 10px;
+            left: 10px;
+            font-size: 40px;
+        }
+        .title{
+            width: 80%;
+        }
+    }
 `;
 
 const List = styled.ul`
@@ -112,5 +122,8 @@ const List = styled.ul`
     li:hover{
         background: #525562;
         color: #FFF;
+    }
+    @media (max-width: 900px){
+        width: 80%;
     }
 `;

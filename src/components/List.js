@@ -96,4 +96,17 @@ const Container = styled.div`
     h2:last-child{
         width: 40%;
     }
+    @media (max-width: 900px){
+        .icon{
+            top: 10px;
+            left: 10px;
+            font-size: 40px;
+        }
+        .title{
+            width: 80%;
+        }
+        ul{
+            width: 80%;
+        }
+    }
 `;
