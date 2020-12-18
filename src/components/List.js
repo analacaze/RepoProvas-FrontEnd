@@ -12,12 +12,12 @@ export default function List(props){
 
     useEffect(() => {
         if (type === 1){
-            const request = axios.get(`http://localhost:3000/api/tests/teacher/${id}`);
+            const request = axios.get(`https://repoprovas-back.herokuapp.com/api/tests/teacher/${id}`);
             request.then(response => {
             setData(response.data);
             }).catch(() => console.log("erro"));
         }else{
-            const request = axios.get(`http://localhost:3000/api/tests/subject/${id}`);
+            const request = axios.get(`https://repoprovas-back.herokuapp.com/api/tests/subject/${id}`);
             request.then(response => {
             setData(response.data);
             }).catch(() => console.log("erro"));

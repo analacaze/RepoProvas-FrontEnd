@@ -12,13 +12,13 @@ export default function View(){
     const [subjects, setSubjects] = useState([]);
 
     useEffect(() => {
-        const request = axios.get('http://localhost:3000/api/teachers');
+        const request = axios.get('https://repoprovas-back.herokuapp.com/api/teachers');
         request.then(response => {
         setTeachers(response.data);
         }).catch(() => console.log("erro"));
     },[]);
     useEffect(() => {
-        const request = axios.get('http://localhost:3000/api/subjects');
+        const request = axios.get('https://repoprovas-back.herokuapp.com/api/subjects');
         request.then(response => {
         setSubjects(response.data);
         }).catch(() => console.log("erro"));
